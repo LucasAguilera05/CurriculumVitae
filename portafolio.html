@@ -1,50 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae Lucas</title>
+	<title>Mi Portafolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+
+.carousel {
+  height: 500px; /* Establece la altura del carousel en 400 píxeles */
+}
+
+.carousel img {
+  width: 100%; /* Establece la anchura de la imagen al 100% del ancho del contenedor */
+  height: 100%; /* Ajusta la altura de la imagen automáticamente */
+}
+
+		.carousel-item {
+			height: 70vh;
+			min-height: 350px;
+			background: no-repeat center center scroll;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+
+
+	</style>
 </head>
 <body>
 
-    <div class="container-fluid p-0 n-0">
-             
+  <div class="container-fluid m-0 p-0">
 
-        <div class="row m-0 p-5" style="text-align: center;">
+    <!-- aqui va el navbar-->
+      <div class="row-fluid m-0 p-0">
+
+          <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Orellana Aguilera Lucas Agustin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experiencia">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Conocimientos">Conocimientos</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+
+       <!-- aqui va el carousel-->
+      <div class="row-fluid">
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./imagenes/PicsArt_05-11-01.01.42.jpg" alt="PRIMER IMAGEN">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./imagenes/PicsArt_05-11-01.05.54.jpg" alt="SEGUNDA IMAGEN">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./imagenes/PicsArt_05-11-12.59.40.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button"></a> 
             
-            <div class="col-12"> 
-                <h1> ORELLANA AGUILERA LUCAS AGUSTIN</h1>
-            </div>
         </div>
 
-        <div class="row">
-            <h3 style="text-align: left;">Estudiante de ingenieria en sistemas de la información</h3>
-            <div class="col-6">
-                    <img src="./img/obelisco2.0.jpg" width="300" height="300" alt="perfil de Lucas">
+      </div>
+
+          <!-- aqui va el card-->
+          <section id = Conocimientos> 
+            <div class="row m-5 p-3" style="text-align: center;">
+              <h2 style="margin: auto; max-width: 80%;">
+                CONOCIMIENTOS:
+              </h2>
             </div>
-            <div class="col-6">
+            
+          <div class="row m-5">
+            
+              
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="./imagenes/fondo 1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              
+      
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="./imagenes/fondo 1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="./imagenes/fondo 1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="./imagenes/fondo 1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </section>
 
-                <p> este es mi proyecto ama, soy estudiante y emprendedor </p>
-            </div>
-        </div>
+
+            
+
+            
+  </div>
 
 
-    </div>
-
-    
-    
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
-</html>
+</html> 
